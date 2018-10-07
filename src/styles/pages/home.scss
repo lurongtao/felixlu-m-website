@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'yofont';
+  src: url('/iconfonts/iconfont.eot');
+  src: url('/iconfonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('/iconfonts/iconfont.woff') format('woff'),
+  url('/iconfonts/iconfont.ttf') format('truetype'),
+  url('/iconfonts/iconfont.svg#iconfont') format('svg');
+}
+
+#root {
+  height: 100%;
+}
+
+.home-container {
+  height: 100%;
+  @include flexbox();
+  @include flex-direction(column);
+  header {
+    height: .44rem;
+    font-size: .18rem;
+    background: #00b38a;
+    color: #fff;
+    text-align: center;
+    line-height: .44rem;
+  }
+  main {
+    @include flex();
+    width: 100%;
+    background: #fff;
+  }
+  nav {
+    height: .44rem;
+    ul {
+      height: 100%;
+      width: 100%;
+      background: #f6f6f6;
+      @include flexbox();
+      li {
+        @include flex();
+        font-size: .18rem;
+        color: #c2cfcc;
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+        &.active {
+          background: #e7f3f0;
+          color: #00b38a;
+        }
+        b {
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}

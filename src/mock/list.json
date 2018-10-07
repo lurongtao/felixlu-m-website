@@ -1,0 +1,227 @@
+{
+  "content": {
+    "data": {
+      "isLogin": false,
+      "page": {
+        "pageSize": 15,
+        "start": "15",
+        "result": [{
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4420602,
+          "positionName": "电商运营专员",
+          "city": "北京",
+          "createTime": "今天 14:44",
+          "salary": "6k-10k",
+          "companyId": 38423,
+          "companyLogo": "image1/M00/0E/90/Cgo8PFT7JP2APtoiAABfklzUOHw689.jpg",
+          "companyName": "极果",
+          "companyFullName": "北京极智飞扬科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4429762,
+          "positionName": "测试工程师",
+          "city": "北京",
+          "createTime": "今天 14:22",
+          "salary": "10k-20k",
+          "companyId": 149208,
+          "companyLogo": "i/image/M00/5C/53/CgqKkVfjhsWAIa3tAAAUS0RjcMg685.jpg",
+          "companyName": "田米科技",
+          "companyFullName": "北京田米科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4406941,
+          "positionName": "语音产品经理",
+          "city": "北京",
+          "createTime": "今天 14:22",
+          "salary": "20k-40k",
+          "companyId": 149208,
+          "companyLogo": "i/image/M00/5C/53/CgqKkVfjhsWAIa3tAAAUS0RjcMg685.jpg",
+          "companyName": "田米科技",
+          "companyFullName": "北京田米科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4417511,
+          "positionName": "H5",
+          "city": "上海",
+          "createTime": "今天 14:20",
+          "salary": "9k-15k",
+          "companyId": 126294,
+          "companyLogo": "i/image/M00/23/EB/CgqKkVcYqLiANM8_AAEfwK4WEqQ199.jpg",
+          "companyName": "上海驭网",
+          "companyFullName": "上海驭网信息技术有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4398470,
+          "positionName": "美工",
+          "city": "广州",
+          "createTime": "今天 14:17",
+          "salary": "4k-6k",
+          "companyId": 297623,
+          "companyLogo": "i/image/M00/7B/46/CgpFT1pN3zmAGZ7IAAAiSbvOIZU406.gif",
+          "companyName": "川博科技",
+          "companyFullName": "广州川博信息科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4406463,
+          "positionName": "外贸业务员",
+          "city": "广州",
+          "createTime": "今天 14:17",
+          "salary": "5k-10k",
+          "companyId": 297623,
+          "companyLogo": "i/image/M00/7B/46/CgpFT1pN3zmAGZ7IAAAiSbvOIZU406.gif",
+          "companyName": "川博科技",
+          "companyFullName": "广州川博信息科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4418453,
+          "positionName": "业务员+就近分配",
+          "city": "北京",
+          "createTime": "今天 14:15",
+          "salary": "6k-12k",
+          "companyId": 279556,
+          "companyLogo": "i/image2/M00/17/A6/CgoB5ln5eX-AIJbYAAAjWBSr8cY417.jpg",
+          "companyName": "冻冻",
+          "companyFullName": "冻冻（北京）网络科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4430253,
+          "positionName": "Consulting Partner",
+          "city": "北京",
+          "createTime": "今天 14:13",
+          "salary": "30k-40k",
+          "companyId": 1650,
+          "companyLogo": "i/image/M00/01/59/Cgp3O1Zn9kCAAW4jAABX8W4A-fw360.jpg",
+          "companyName": "联想集团",
+          "companyFullName": "联想（北京）有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4430931,
+          "positionName": "IT规划资深专家",
+          "city": "北京",
+          "createTime": "今天 14:13",
+          "salary": "25k-50k",
+          "companyId": 1650,
+          "companyLogo": "i/image/M00/01/59/Cgp3O1Zn9kCAAW4jAABX8W4A-fw360.jpg",
+          "companyName": "联想集团",
+          "companyFullName": "联想（北京）有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4379448,
+          "positionName": "JAVA讲师",
+          "city": "北京",
+          "createTime": "今天 14:11",
+          "salary": "18K-20K",
+          "companyId": 114259,
+          "companyLogo": "i/image/M00/03/9A/CgqKkVbBkYyAV_3AAAAYK2bvgTg524.png",
+          "companyName": "北京八维研修学院",
+          "companyFullName": "北京八维研修学院"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4407630,
+          "positionName": "投资 理财 顾问",
+          "city": "北京",
+          "createTime": "今天 14:11",
+          "salary": "8k-10k",
+          "companyId": 124195,
+          "companyLogo": "i/image/M00/43/76/CgpFT1lfM6mAXFUwAABo_6cN6zw428.jpg",
+          "companyName": "丽兹行",
+          "companyFullName": "北京丽兹行房地产顾问有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4415567,
+          "positionName": "网络推广员",
+          "city": "佛山",
+          "createTime": "今天 14:11",
+          "salary": "3k-5k",
+          "companyId": 127641,
+          "companyLogo": "i/image/M00/27/77/CgqKkVcoKLqAfM4UAAC6xlN0W20479.jpg",
+          "companyName": "玉扳手",
+          "companyFullName": "广东玉扳手科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4413600,
+          "positionName": "供应链经理",
+          "city": "深圳",
+          "createTime": "今天 13:59",
+          "salary": "15k-30k",
+          "companyId": 119456,
+          "companyLogo": "i/image/M00/13/CA/Cgp3O1bn9LKAGAYGAAAkatw-nec324.png",
+          "companyName": "云之梦科技",
+          "companyFullName": "深圳市云之梦科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4414010,
+          "positionName": "文案策划主管",
+          "city": "深圳",
+          "createTime": "今天 13:59",
+          "salary": "10k-20k",
+          "companyId": 119456,
+          "companyLogo": "i/image/M00/13/CA/Cgp3O1bn9LKAGAYGAAAkatw-nec324.png",
+          "companyName": "云之梦科技",
+          "companyFullName": "深圳市云之梦科技有限公司"
+        }, {
+          "logger": {
+            "traceCapable": true,
+            "name": "com.lagou.entity.mobile.MobilePosition"
+          },
+          "positionId": 4416115,
+          "positionName": "销售代表",
+          "city": "苏州",
+          "createTime": "今天 13:47",
+          "salary": "5k-10k",
+          "companyId": 362544,
+          "companyLogo": "i/image2/M00/44/8C/CgoB5lrMdVmALWF4AAAt2Gwd7R0469.png",
+          "companyName": "品诵建材",
+          "companyFullName": "苏州品诵建材有限公司"
+        }],
+        "totalCount": "320101",
+        "pageNo": 2
+      }
+    },
+    "rows": []
+  },
+  "message": "第2页数据,每页15条, 查询成功!",
+  "state": 1
+}

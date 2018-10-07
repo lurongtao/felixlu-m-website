@@ -1,0 +1,23 @@
+<div>
+  <div>
+    <span>10秒钟定制职位</span>
+    <span>去登录</span>
+  </div>
+  <ul>
+    {{#each list}}
+    <li>
+      <div>
+        <img src="//www.lgstatic.com/{{companyLogo}}" alt="">
+      </div>
+      <div>
+        <h1>{{companyName}}</h1>
+        <h2>{{positionName}}[{{city}}]</h2>
+        <h3>{{createTime}}</h3>
+      </div>
+      <div>
+        {{salary}}
+      </div>
+    </li>
+    {{/each}}
+  </ul>
+</div>
