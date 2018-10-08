@@ -1,0 +1,33 @@
+{
+	"content": {
+		"data": {
+			"isLogin": false,
+			"page": {
+				"pageSize": 15,
+				"start": "15",
+				"result": [
+					{
+	          "logger": {
+	            "traceCapable": true,
+	            "name": "com.lagou.entity.mobile.MobilePosition"
+	          },
+	          "positionId": 4396333,
+	          "positionName": "广告文案策划",
+	          "city": "广州",
+	          "createTime": "今天 11:10",
+	          "salary": "5k-9k",
+	          "companyId": 295248,
+	          "companyLogo": "i/image3/M00/1F/54/Cgq2xlqRE4WAEqpEAAQ7ebxQXuE709.jpg",
+	          "companyName": "爱情青蛙",
+	          "companyFullName": "深圳爱情青蛙教育咨询有限公司广州分公司"
+	        }
+				],
+				"totalCount": "372896",
+				"pageNo": 2
+			}
+		},
+		"rows": []
+	},
+	"message": "第2页数据,每页15条, 查询成功!",
+	"state": 1
+}

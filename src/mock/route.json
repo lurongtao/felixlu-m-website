@@ -1,3 +1,5 @@
 {
-  "/api/position/list": "/list"
+  "/api/position/list": "/list",
+  "/api/position/refresh": "/refresh",
+  "/api/position/loadmore": "/loadmore"
 }

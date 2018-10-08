@@ -784,6 +784,33 @@ a {
 
 .home-container main {
   overflow: hidden; }
+  .home-container main > div .head,
+  .home-container main > div .foot {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: .4rem; }
+  .home-container main > div .head img,
+  .home-container main > div .foot img {
+    width: .16rem;
+    height: .16rem;
+    transition: transform 150ms;
+    -webkit-transition: transform 150ms; }
+  .home-container main > div .head img {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .home-container main > div .up {
+    transform: rotate(360deg) !important;
+    -webkit-transform: rotate(360deg) !important; }
+  .home-container main > div .down {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
   .home-container main > div > div {
     padding: 0 .15rem;
     height: .44rem;

@@ -7,6 +7,26 @@ const list = () => {
   })
 }
 
+const refresh = () => {
+  return $.ajax({
+    url: '/api/position/refresh',
+    success: (result) => {
+      return result
+    }
+  })
+}
+
+const loadmore = (url) => {
+  return $.ajax({
+    url,
+    success: (result) => {
+      return result
+    }
+  })
+}
+
 export default {
-  list
+  list,
+  refresh,
+  loadmore
 }

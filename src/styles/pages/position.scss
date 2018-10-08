@@ -2,6 +2,31 @@
   main {
     overflow: hidden;
     > div {
+      .head, 
+      .foot {
+        @include flexbox();
+        @include align-items(center);
+        @include justify-content(center);
+        height: .4rem;
+      }
+      .head img,
+      .foot img {
+        width: .16rem;
+        height: .16rem;
+        transition: transform 150ms;
+        -webkit-transition: transform 150ms;
+      }
+      .head img {
+        @include transform(rotate(180deg));
+      }
+      .up {
+        transform: rotate(360deg) !important;
+        -webkit-transform: rotate(360deg) !important;
+      }
+      .down {
+        @include transform(rotate(180deg));
+      }
+      
       > div {
         padding: 0 .15rem;
         height: .44rem;
