@@ -37,7 +37,9 @@ gulp.task('packjs', () => {
     .pipe(webpack({
       mode: 'production',
       entry: {
-        app: ['@babel/polyfill', './src/scripts/app.js']
+        position: ['@babel/polyfill', './src/scripts/position.js'],
+        search: ['@babel/polyfill', './src/scripts/search.js'],
+        profile: ['@babel/polyfill', './src/scripts/profile.js'],
       },
       output: {
         filename: '[name].js'
