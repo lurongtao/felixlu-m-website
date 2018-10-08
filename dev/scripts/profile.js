@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -98,17 +98,6 @@ eval("/* WEBPACK VAR INJECTION */(function(global) {\n\n__webpack_require__(/*! 
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function _arrayWithoutHoles(arr) {\n  if (Array.isArray(arr)) {\n    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {\n      arr2[i] = arr[i];\n    }\n\n    return arr2;\n  }\n}\n\nmodule.exports = _arrayWithoutHoles;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js?");
-
-/***/ }),
-
 /***/ "./node_modules/@babel/runtime/helpers/asyncToGenerator.js":
 /*!*****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/asyncToGenerator.js ***!
@@ -117,39 +106,6 @@ eval("function _arrayWithoutHoles(arr) {\n  if (Array.isArray(arr)) {\n    for (
 /***/ (function(module, exports) {
 
 eval("function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {\n  try {\n    var info = gen[key](arg);\n    var value = info.value;\n  } catch (error) {\n    reject(error);\n    return;\n  }\n\n  if (info.done) {\n    resolve(value);\n  } else {\n    Promise.resolve(value).then(_next, _throw);\n  }\n}\n\nfunction _asyncToGenerator(fn) {\n  return function () {\n    var self = this,\n        args = arguments;\n    return new Promise(function (resolve, reject) {\n      var gen = fn.apply(self, args);\n\n      function _next(value) {\n        asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n      }\n\n      function _throw(err) {\n        asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n      }\n\n      _next(undefined);\n    });\n  };\n}\n\nmodule.exports = _asyncToGenerator;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/asyncToGenerator.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/iterableToArray.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/iterableToArray.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function _iterableToArray(iter) {\n  if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === \"[object Arguments]\") return Array.from(iter);\n}\n\nmodule.exports = _iterableToArray;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/iterableToArray.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/nonIterableSpread.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/nonIterableSpread.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function _nonIterableSpread() {\n  throw new TypeError(\"Invalid attempt to spread non-iterable instance\");\n}\n\nmodule.exports = _nonIterableSpread;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/nonIterableSpread.js?");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/toConsumableArray.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/toConsumableArray.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var arrayWithoutHoles = __webpack_require__(/*! ./arrayWithoutHoles */ \"./node_modules/@babel/runtime/helpers/arrayWithoutHoles.js\");\n\nvar iterableToArray = __webpack_require__(/*! ./iterableToArray */ \"./node_modules/@babel/runtime/helpers/iterableToArray.js\");\n\nvar nonIterableSpread = __webpack_require__(/*! ./nonIterableSpread */ \"./node_modules/@babel/runtime/helpers/nonIterableSpread.js\");\n\nfunction _toConsumableArray(arr) {\n  return arrayWithoutHoles(arr) || iterableToArray(arr) || nonIterableSpread();\n}\n\nmodule.exports = _toConsumableArray;\n\n//# sourceURL=webpack:///./node_modules/@babel/runtime/helpers/toConsumableArray.js?");
 
 /***/ }),
 
@@ -3298,18 +3254,6 @@ eval("var g;\r\n\r\n// This works in non-strict mode\r\ng = (function() {\r\n\tr
 
 /***/ }),
 
-/***/ "./src/scripts/app.js":
-/*!****************************!*\
-  !*** ./src/scripts/app.js ***!
-  \****************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/router */ \"./src/utils/router.js\");\n/* harmony import */ var _controllers_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./controllers/home */ \"./src/scripts/controllers/home.js\");\n/* harmony import */ var _controllers_position__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./controllers/position */ \"./src/scripts/controllers/position.js\");\n/* harmony import */ var _controllers_search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./controllers/search */ \"./src/scripts/controllers/search.js\");\n/* harmony import */ var _controllers_profile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./controllers/profile */ \"./src/scripts/controllers/profile.js\");\n\n\n\n\n\n_controllers_home__WEBPACK_IMPORTED_MODULE_1__[\"default\"].render(); // fastclick\n\nvar attachFastClick = Origami.fastclick;\nattachFastClick(document.body); // 路由定义\n\nvar router = new _utils_router__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nrouter.route('/position', _controllers_position__WEBPACK_IMPORTED_MODULE_2__[\"default\"].render);\nrouter.route('/search', _controllers_search__WEBPACK_IMPORTED_MODULE_3__[\"default\"].render);\nrouter.route('/profile', _controllers_profile__WEBPACK_IMPORTED_MODULE_4__[\"default\"].render);\nrouter.init();\nrouter.redirect('/position');\n\n//# sourceURL=webpack:///./src/scripts/app.js?");
-
-/***/ }),
-
 /***/ "./src/scripts/controllers/home.js":
 /*!*****************************************!*\
   !*** ./src/scripts/controllers/home.js ***!
@@ -3318,19 +3262,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/home.html */ \"./src/scripts/views/home.html\");\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_home_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $('#root').html(_views_home_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n  switchTab();\n};\n\nvar switchTab = function switchTab() {\n  $('nav li').on('tap', function () {\n    var pagelist = ['/position', '/search', '/profile'];\n    location.hash = pagelist[$(this).index()];\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/scripts/controllers/home.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/controllers/position.js":
-/*!*********************************************!*\
-  !*** ./src/scripts/controllers/position.js ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ \"./node_modules/@babel/runtime/helpers/toConsumableArray.js\");\n/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _views_position_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../views/position.html */ \"./src/scripts/views/position.html\");\n/* harmony import */ var _views_position_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_views_position_html__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _views_position_list_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../views/position-list.html */ \"./src/scripts/views/position-list.html\");\n/* harmony import */ var _views_position_list_html__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_views_position_list_html__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _models_position__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../models/position */ \"./src/scripts/models/position.js\");\n\n\n\n\n\n\nvar datasource = [];\nvar pageno = 1;\n\nvar render =\n/*#__PURE__*/\nfunction () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee() {\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            $('main').html(_views_position_html__WEBPACK_IMPORTED_MODULE_3___default.a);\n            renderList();\n            renderScroll();\n\n          case 3:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n\n  return function render() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\nvar renderScroll = function renderScroll() {\n  var posScroll = new BScroll('main', {\n    probeType: 2\n  });\n  posScroll.scrollBy(0, -40);\n  var head = $('.head img'),\n      topImgHasClass = head.hasClass('up');\n  var foot = $('.foot img'),\n      bottomImgHasClass = head.hasClass('down');\n  posScroll.on('scroll', function () {\n    var y = this.y,\n        maxY = this.maxScrollY - y; // 下拉，当隐藏的loading完全显示的时候触发\n\n    if (y >= 0) {\n      !topImgHasClass && head.addClass('up');\n      return;\n    } // 上拉，当滚动到最底部时候触发\n\n\n    if (maxY >= 0) {\n      !bottomImgHasClass && foot.addClass('down');\n      return;\n    }\n  });\n  posScroll.on('scrollEnd',\n  /*#__PURE__*/\n  _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee2() {\n    var result, list, template, html, maxY, _result, _list, _template, _html;\n\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee2$(_context2) {\n      while (1) {\n        switch (_context2.prev = _context2.next) {\n          case 0:\n            if (!(this.y >= -40 && this.y < 0)) {\n              _context2.next = 5;\n              break;\n            }\n\n            this.scrollTo(0, -40);\n            head.removeClass('up');\n            _context2.next = 18;\n            break;\n\n          case 5:\n            if (!(this.y >= 0)) {\n              _context2.next = 18;\n              break;\n            }\n\n            head.attr('src', '/images/ajax-loader.gif');\n            _context2.next = 9;\n            return _models_position__WEBPACK_IMPORTED_MODULE_5__[\"default\"].refresh();\n\n          case 9:\n            result = _context2.sent;\n            list = datasource = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(result.content.data.page.result).concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(datasource));\n            template = Handlebars.compile(_views_position_list_html__WEBPACK_IMPORTED_MODULE_4___default.a);\n            html = template({\n              list: list\n            });\n            $('#scroll-list').html(html);\n            this.refresh();\n            head.attr('src', '/images/arrow.png');\n            this.scrollTo(0, -40);\n            head.removeClass('up');\n\n          case 18:\n            // 下拉加载处理\n            maxY = this.maxScrollY - this.y;\n\n            if (!(maxY > -40 && maxY < 0)) {\n              _context2.next = 24;\n              break;\n            }\n\n            this.scrollTo(0, this.maxScrollY + 40);\n            foot.removeClass('down');\n            _context2.next = 37;\n            break;\n\n          case 24:\n            if (!(maxY >= 0)) {\n              _context2.next = 37;\n              break;\n            }\n\n            foot.attr('src', '/images/ajax-loader.gif');\n            _context2.next = 28;\n            return _models_position__WEBPACK_IMPORTED_MODULE_5__[\"default\"].loadmore(\"/lagou/listmore.json?pageNo=\".concat(++pageno, \"&pageSize=15\"));\n\n          case 28:\n            _result = _context2.sent;\n            _list = datasource = _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(datasource).concat(_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0___default()(_result.content.data.page.result));\n            _template = Handlebars.compile(_views_position_list_html__WEBPACK_IMPORTED_MODULE_4___default.a);\n            _html = _template({\n              list: _list\n            });\n            $('#scroll-list').html(_html);\n            this.refresh();\n            this.scrollTo(0, this.y + 40);\n            foot.attr('src', '/images/arrow.png');\n            foot.removeClass('down');\n\n          case 37:\n          case \"end\":\n            return _context2.stop();\n        }\n      }\n    }, _callee2, this);\n  })));\n};\n\nvar renderList =\n/*#__PURE__*/\nfunction () {\n  var _ref3 = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.mark(function _callee3() {\n    var result, list, template, html;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_1___default.a.wrap(function _callee3$(_context3) {\n      while (1) {\n        switch (_context3.prev = _context3.next) {\n          case 0:\n            _context3.next = 2;\n            return _models_position__WEBPACK_IMPORTED_MODULE_5__[\"default\"].list();\n\n          case 2:\n            result = _context3.sent;\n            list = datasource = result.content.data.page.result;\n            template = Handlebars.compile(_views_position_list_html__WEBPACK_IMPORTED_MODULE_4___default.a);\n            html = template({\n              list: list\n            });\n            $('#scroll-list').html(html);\n\n          case 7:\n          case \"end\":\n            return _context3.stop();\n        }\n      }\n    }, _callee3, this);\n  }));\n\n  return function renderList() {\n    return _ref3.apply(this, arguments);\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/scripts/controllers/position.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/home.html */ \"./src/scripts/views/home.html\");\n/* harmony import */ var _views_home_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_views_home_html__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar render = function render() {\n  $('#root').html(_views_home_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n  switchTab();\n};\n\nvar switchTab = function switchTab() {\n  var pagelist = ['/index.html', '/search.html', '/profile.html'];\n  var index = pagelist.indexOf(location.pathname);\n  $('nav li').eq(index).addClass('active').siblings().removeClass('active');\n  $('nav li').on('tap', function () {\n    location.href = pagelist[$(this).index()];\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/scripts/controllers/home.js?");
 
 /***/ }),
 
@@ -3346,27 +3278,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bab
 
 /***/ }),
 
-/***/ "./src/scripts/controllers/search.js":
-/*!*******************************************!*\
-  !*** ./src/scripts/controllers/search.js ***!
-  \*******************************************/
-/*! exports provided: default */
+/***/ "./src/scripts/profile.js":
+/*!********************************!*\
+  !*** ./src/scripts/profile.js ***!
+  \********************************/
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _views_search_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../views/search.html */ \"./src/scripts/views/search.html\");\n/* harmony import */ var _views_search_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_views_search_html__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nvar render =\n/*#__PURE__*/\nfunction () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(\n  /*#__PURE__*/\n  _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            $('main').html(_views_search_html__WEBPACK_IMPORTED_MODULE_2___default.a);\n\n          case 1:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee, this);\n  }));\n\n  return function render() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  render: render\n});\n\n//# sourceURL=webpack:///./src/scripts/controllers/search.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/models/position.js":
-/*!****************************************!*\
-  !*** ./src/scripts/models/position.js ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar list = function list() {\n  return $.ajax({\n    url: '/api/position/list',\n    success: function success(result) {\n      return result;\n    }\n  });\n};\n\nvar refresh = function refresh() {\n  return $.ajax({\n    url: '/api/position/refresh',\n    success: function success(result) {\n      return result;\n    }\n  });\n};\n\nvar loadmore = function loadmore(url) {\n  return $.ajax({\n    url: url,\n    success: function success(result) {\n      return result;\n    }\n  });\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  list: list,\n  refresh: refresh,\n  loadmore: loadmore\n});\n\n//# sourceURL=webpack:///./src/scripts/models/position.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _controllers_home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./controllers/home */ \"./src/scripts/controllers/home.js\");\n/* harmony import */ var _controllers_profile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./controllers/profile */ \"./src/scripts/controllers/profile.js\");\n\n\n_controllers_home__WEBPACK_IMPORTED_MODULE_0__[\"default\"].render();\n_controllers_profile__WEBPACK_IMPORTED_MODULE_1__[\"default\"].render(); // fastclick\n\nvar attachFastClick = Origami.fastclick;\nattachFastClick(document.body);\n\n//# sourceURL=webpack:///./src/scripts/profile.js?");
 
 /***/ }),
 
@@ -3381,28 +3301,6 @@ eval("module.exports = \"<div class=\\\"home-container\\\">  <header>拉勾网</
 
 /***/ }),
 
-/***/ "./src/scripts/views/position-list.html":
-/*!**********************************************!*\
-  !*** ./src/scripts/views/position-list.html ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"{{#each list}}  <li>    <div>      <img src=\\\"//www.lgstatic.com/{{companyLogo}}\\\" alt=\\\"\\\">    </div>    <div>      <h1>{{companyName}}</h1>      <h2>{{positionName}}[{{city}}]</h2>      <h3>{{createTime}}</h3>    </div>    <div>      {{salary}}    </div>  </li>{{/each}}\"\n\n//# sourceURL=webpack:///./src/scripts/views/position-list.html?");
-
-/***/ }),
-
-/***/ "./src/scripts/views/position.html":
-/*!*****************************************!*\
-  !*** ./src/scripts/views/position.html ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"<div>  <div class=\\\"head\\\">    <img src=\\\"/images/arrow.png\\\"/>    <b>下拉刷新...</b>  </div>  <div>    <span>10秒钟定制职位</span>    <span>去登录</span>  </div>  <ul id=\\\"scroll-list\\\"></ul>  <div class=\\\"foot\\\">    <img src=\\\"/images/arrow.png\\\"/>    <b>上拉加载更多...</b>  </div></div>\"\n\n//# sourceURL=webpack:///./src/scripts/views/position.html?");
-
-/***/ }),
-
 /***/ "./src/scripts/views/profile.html":
 /*!****************************************!*\
   !*** ./src/scripts/views/profile.html ***!
@@ -3414,37 +3312,14 @@ eval("module.exports = \"<div>  profile...</div>\"\n\n//# sourceURL=webpack:///.
 
 /***/ }),
 
-/***/ "./src/scripts/views/search.html":
-/*!***************************************!*\
-  !*** ./src/scripts/views/search.html ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"<div>  search...</div>\"\n\n//# sourceURL=webpack:///./src/scripts/views/search.html?");
-
-/***/ }),
-
-/***/ "./src/utils/router.js":
-/*!*****************************!*\
-  !*** ./src/utils/router.js ***!
-  \*****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction Router() {\n  this.currentUrl = '';\n  this.routes = {};\n}\n\nvar noop = function noop() {};\n\nRouter.prototype.route = function (url, cb) {\n  this.routes[url] = cb || noop;\n};\n\nRouter.prototype.refresh = function () {\n  this.currentUrl = location.hash.slice(1) || '/position';\n  this.routes[this.currentUrl]();\n  this.switchTab();\n};\n\nRouter.prototype.redirect = function (url) {\n  this.currentUrl = url;\n  location.hash = this.currentUrl;\n};\n\nRouter.prototype.switchTab = function () {\n  var pagelist = new Map([['/position', 0], ['/search', 1], ['/profile', 2]]);\n  $('nav li').eq(pagelist.get(this.currentUrl)).addClass('active').siblings().removeClass('active');\n};\n\nRouter.prototype.init = function () {\n  window.addEventListener('load', this.refresh.bind(this));\n  window.addEventListener('hashchange', this.refresh.bind(this));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Router);\n\n//# sourceURL=webpack:///./src/utils/router.js?");
-
-/***/ }),
-
-/***/ 0:
-/*!**************************************************!*\
-  !*** multi @babel/polyfill ./src/scripts/app.js ***!
-  \**************************************************/
+/***/ 2:
+/*!******************************************************!*\
+  !*** multi @babel/polyfill ./src/scripts/profile.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! @babel/polyfill */\"./node_modules/@babel/polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./src/scripts/app.js */\"./src/scripts/app.js\");\n\n\n//# sourceURL=webpack:///multi_@babel/polyfill_./src/scripts/app.js?");
+eval("__webpack_require__(/*! @babel/polyfill */\"./node_modules/@babel/polyfill/lib/index.js\");\nmodule.exports = __webpack_require__(/*! ./src/scripts/profile.js */\"./src/scripts/profile.js\");\n\n\n//# sourceURL=webpack:///multi_@babel/polyfill_./src/scripts/profile.js?");
 
 /***/ })
 

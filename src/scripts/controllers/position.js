@@ -7,7 +7,9 @@ let pageno = 1
 const render = async () => {
   $('main').html(positionTpl)
   renderList()
-  renderScroll()
+  setTimeout(() => {
+    renderScroll()
+  }, 0)
 }
 
 const renderScroll = () => {

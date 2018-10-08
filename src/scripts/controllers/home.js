@@ -6,9 +6,11 @@ const render = () => {
 }
 
 const switchTab = () => {
+  const pagelist = ['/index.html', '/search.html', '/profile.html']
+  const index = pagelist.indexOf(location.pathname)
+  $('nav li').eq(index).addClass('active').siblings().removeClass('active')
   $('nav li').on('tap', function () {
-    const pagelist = ['/position', '/search', '/profile']
-    location.hash = pagelist[$(this).index()]
+    location.href = pagelist[$(this).index()]
   })
 }
 
