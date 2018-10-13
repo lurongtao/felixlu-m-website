@@ -9,6 +9,10 @@
 - fastclick
 - 自主编写的基于hash的路由
 
+## 分支简介
+- 分支lagou-map: 多页面架构
+- 分支lagou-sap: 单页面架构
+
 ## 使用方法
 ``` bash
 # 安装依赖包
