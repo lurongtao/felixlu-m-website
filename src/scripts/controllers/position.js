@@ -21,7 +21,7 @@ const renderScroll = () => {
   let head = $('.head img'),
       topImgHasClass = head.hasClass('up')
   let foot = $('.foot img'),
-      bottomImgHasClass = head.hasClass('down')
+      bottomImgHasClass = foot.hasClass('down')
   
   posScroll.on('scroll', function () {
     let y = this.y,
